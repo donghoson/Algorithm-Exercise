@@ -38,13 +38,13 @@ class Main
 			for(int i=0; i<tmp.length; i++){
 				if(tmp[i]=='(')					//'('가 들어오면 그냥 push
 					push('(');
-				else							//')'가 들어온 경우
+				else						//')'가 들어온 경우
 					if(top==-1) {				//스택이 empty이면 ')'를 push할 수 없음
-						top++;					//top을 -1이 아니게 만든다. 
+						top++;				//top을 -1이 아니게 만든다. 
 						break;
 					}
-					else if(stack[top]=='(')	//스택의 top이 '('인 경우
-						pop();					//top을 pop시킨다.
+					else if(stack[top]=='(')		//스택의 top이 '('인 경우
+						pop();				//top을 pop시킨다.
 			}
 			System.out.println(top==-1 ? "YES" : "NO");	
 		}
