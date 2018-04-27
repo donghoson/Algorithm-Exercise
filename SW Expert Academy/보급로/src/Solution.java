@@ -14,8 +14,8 @@ class Solution {
     public static int[][] map;
     public static int[][] distance;					
     public static final int INF = 100000;
-    public static int[] dx = {0,0,1,-1};			//동서남북 좌표 변경 용 배열
-    public static int[] dy = {1,-1,0,0};			//dx는 행, dy는 열을 의미
+    public static int[] dx = {0,0,1,-1};            //동서남북 좌표 변경 용 배열
+    public static int[] dy = {1,-1,0,0};            //dx는 행, dy는 열을 의미
      
     public static void push(Node xy){
         Queue[end++]=xy;
@@ -28,13 +28,14 @@ class Solution {
         if(front == end) return true;
         else return false;
     }
-    public static void initQ(){						//각 테스트케이스마다 초기에 큐를 초기화 함
+    public static void initQ(){                     //각 테스트케이스마다 초기에 큐를 초기화 함
         Queue = new Node[INF];
         front=0;
         end=0;
     }
+    //특정노드까지의 최단경로 거리정보를 저장하는 배열을 초기화
     public static void initDistance(){
-        for(int i=0; i<distance.length; i++)		//특정노드까지의 최단경로 거리정보를 저장하는 배열을 초기화
+        for(int i=0; i<distance.length; i++)
             for(int j=0; j<distance.length; j++)
                 distance[i][j]=INF;
     }
@@ -52,9 +53,10 @@ class Solution {
             // 이 부분에서 알고리즘 프로그램을 작성하십시오. 기본 제공된 코드를 수정 또는 삭제하고 본인이 코드를 사용하셔도 됩니다.
  
             N = sc.nextInt();
- 
-            map = new int[N][N];							//맵 정보 저장
-            distance = new int[N][N];						//출발 노드부터 특정노드까지의 최단거리 정보 저장
+            //맵 정보 저장
+            map = new int[N][N];
+            //출발 노드부터 특정노드까지의 최단거리 정보 저장
+            distance = new int[N][N];						
              
              
             sc.nextLine();
