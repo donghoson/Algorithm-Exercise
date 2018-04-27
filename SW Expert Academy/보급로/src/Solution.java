@@ -65,11 +65,12 @@ class Solution {
                 String str = sc.nextLine();
                 char[] temp = str.toCharArray();
                 for(int j=0; j<N; j++){
-                    map[i][j]=temp[j]-'0';                  //char형 문자로 표현된 숫자들을 int형으로 바꾸는 테크닉
+                    //char형 문자로 표현된 숫자들을 int형으로 바꾸는 테크닉
+                    map[i][j]=temp[j]-'0';                  
                 }
             }
-             
-            BFS();											//BFS 탐색 시작
+            //BFS 탐색 시작
+            BFS();											
  
             // 이 부분에서 정답을 출력하십시오.
             System.out.println("#"+test_case + " "+distance[N-1][N-1]);//도착점에서의 최단거리 정보 출력
