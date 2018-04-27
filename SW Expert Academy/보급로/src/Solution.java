@@ -8,8 +8,8 @@ class Node{
 }
  
 class Solution {
-    public static Node[] Queue;						//BFS에 쓰이는 큐		
-    public static int front,end;					//큐에 쓰임
+    public static Node[] Queue;                     //BFS에 쓰이는 큐		
+    public static int front,end;                    //큐에 쓰임
     public static int N;
     public static int[][] map;
     public static int[][] distance;					
